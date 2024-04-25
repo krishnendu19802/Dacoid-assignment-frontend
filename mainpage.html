@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container mt-8">
+        <h1 class="text-xl font-bold text-center">What are your goals?</h1>
+
+        <div class="goal-list px-8 mt-16">
+            <div class="goal w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">Weight Loss</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+
+            <div class="goal mt-4 w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">Muscle Gain</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+
+            <div class="goal mt-4 w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">Flexibilty and Mobility</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+
+            <div class="goal mt-4 w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">General Fitness</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+
+            <div class="goal mt-4 w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">Event - specific Training</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+
+            <div class="goal mt-4 w-full  bg-gray-200 flex py-4 rounded-xl flex justify-between px-4">
+                <label for="goal1 ">Mindfulness and Mental health</label>
+                <input class="form-checkbox h-5 w-5 text-blue-500 border-blue-500 bg-transparent" type="checkbox"
+                    name="goal1" id="goal1">
+            </div>
+        </div>
+
+        <div class="mt-16 px-8">
+            <button class="h-12 bg-gradient-to-r from-blue-300 to-blue-500 w-full text-white rounded-xl" id="confirm">
+                Confirm
+            </button>
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById('confirm').addEventListener('click',()=>{
+            window.location.href='tracker.html'
+        })
+    </script>
+</body>
+
+</html>
