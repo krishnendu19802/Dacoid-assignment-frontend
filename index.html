@@ -11,20 +11,20 @@
 
 <body>
     <div class="container cnt1 ">
-        <div class="header mt-8 px-8 flex justify-end">
+        <div class="header mt-4 px-8 flex justify-end">
             <h2 class="ms-auto header1 underline text-blue-300">Skip</h2>
         </div>
-        <div class="mt-16 px-8 imgbox flex justify-center">
+        <div class="mt-4 px-8 imgbox flex justify-center">
             <img src="image1.png" alt="loading" height="282px" width="282px">
         </div>
-        <div class="mt-16 px-8">
+        <div class="mt-8 px-8">
             <h1 class="text-xl">Track Your Goal</h1>
             <div class="mt-4 text-gray-400">Don’t worry if you have trouble determining your goals, We can help you
                 determine your goals and track your goals</div>
         </div>
 
-        <div class="mt-32 px-8 flex justify-end">
-            <button>
+        <div class="mt-24 px-8 flex justify-end">
+            <button id="update1">
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="25" fill="url(#paint0_linear_1_37)"/>
                     <mask id="path-2-inside-1_1_37" fill="white">
@@ -59,7 +59,7 @@
         </div>
 
         <div class="mt-32 px-8 flex justify-end">
-            <button>
+            <button id="update2">
                 
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="30" cy="30" r="25" fill="url(#paint0_linear_1_410)"/>
@@ -82,7 +82,7 @@
     </div>
 
 <script>
-    document.getElementsByClassName('header1')[0].addEventListener('click',function (event) {
+    document.getElementById('update1').addEventListener('click',function (event) {
         let cnt1=document.getElementsByClassName('cnt1')[0];
         let cnt2=document.getElementsByClassName('cnt2')[0];
         cnt1.classList.toggle('hidden');
@@ -91,10 +91,18 @@
 
     })
 
-    document.getElementsByClassName('header2')[0].addEventListener('click',function (event) {
+    document.getElementById('update2').addEventListener('click',function (event) {
         window.location.href='login.html';
 
 
+    })
+    document.getElementsByClassName('header1')[0].addEventListener('click',()=>{
+        window.location.href='login.html';
+        
+    })
+    document.getElementsByClassName('header2')[0].addEventListener('click',()=>{
+        window.location.href='login.html';
+        
     })
 </script>
 
